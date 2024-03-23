@@ -14,13 +14,15 @@ async function addUser(userData) {
   }
 }
 
+// Include the CID in the image URL
+const imageUrl = `https://gateway.pinata.cloud/ipfs/QmdUC9ofZbi2vqpR6j8nHmr5qLbq473UXdVGHpfy4WExpH`;
 const userData = {
   firstName: "Andrew",
   lastName: "Chung",
   graduationYear: 2002,
   company: "Tech Innovations",
   twitter: "@jane_doe",
-  // Add other fields as necessary
+  imageUrl: imageUrl, // Add the imageUrl field to your userData object
 };
 
 addUser(userData).catch(console.error);
