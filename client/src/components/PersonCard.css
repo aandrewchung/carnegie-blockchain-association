@@ -1,0 +1,30 @@
+.person-card {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Smooth transition for height change */
+  }
+  
+  .person-card img {
+    width: 25%; /* Adjust as necessary */
+    border-radius: 8px;
+  }
+  
+  .additional-info {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .person-card:hover .additional-info {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Optional: Increase the size of the card on hover */
+  .person-card:hover {
+    /* Adjust the transform scale as per your design preference */
+    transform: scale(1.05); 
+  }
+  
